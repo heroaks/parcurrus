@@ -1,10 +1,40 @@
-import React from "react"
-import { ReactDOM } from "react"
+import React,{useState ,useEffect} from "react"
+import Home from "./components/Home"
+import "./App.css"
+import Footer from "./components/Footer"
+import GridLoader from "react-spinners/GridLoader";
+import Navbar from "./components/Navbar"
 
 export default function App() {
+  const [loading, setLoading]= useState(false);
+  const [color, setColor] = useState("#ffffff");
+  useEffect(()=>{
+    setLoading(true) 
+    setTimeout(()=>{
+      setLoading(false)
+    },2000)
+  },[])
   return (
-    <h1 className="text-3xl font-bold underline text-red-600">
-      Hello world!
-    </h1>
+ <div className="App">
+  {
+    loading ?
+    <GridLoader
+    color={color}
+    loading={loading}
+    size={30}
+    aria-label="Loading Spinner"
+    data-testid="loader"
+  />
+    :
+<div>
+ <Navbar />
+  <Home />
+ <Footer />
+  
+</div>
+}
+
+  
+ </div>
   )
 }
