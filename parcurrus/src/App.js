@@ -6,6 +6,7 @@ import GridLoader from "react-spinners/GridLoader";
 import Navbar from "./components/Navbar";
 import Call from "./components/Call";
 import Embedd from "./components/Embedd";
+import "./components/style.css"
 
 
 export default function App() {
