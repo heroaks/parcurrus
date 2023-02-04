@@ -3,7 +3,10 @@ import Home from "./components/Home"
 import "./App.css"
 import Footer from "./components/Footer"
 import GridLoader from "react-spinners/GridLoader";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
+import Call from "./components/Call";
+import Embedd from "./components/Embedd";
+
 
 export default function App() {
   const [loading, setLoading]= useState(false);
@@ -29,6 +32,9 @@ export default function App() {
 <div>
  <Navbar />
   <Home />
+  <Embedd />
+
+ 
  <Footer />
   
 </div>
