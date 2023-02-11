@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-   
+    background-color: rgb(55 65 81);
 }
 .App{
     text-align: center;
@@ -9,5 +9,5 @@
     width:100%;
     height: min-content;
     align-items: center;
-    background-color: rgb(55 65 81);
+    
 }
