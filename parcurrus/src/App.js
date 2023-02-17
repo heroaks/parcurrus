@@ -22,13 +22,15 @@ export default function App() {
  <div className="App">
   {
     loading ?
-    <GridLoader
+    <div className="fixed m-0 p-0 left-[48%] top-[45%] ">
+      <GridLoader className=""
     color={color}
     loading={loading}
-    size={30}
+    size={25}
     aria-label="Loading Spinner"
     data-testid="loader"
   />
+  </div>    
     :
 <div>
  <Navbar />
