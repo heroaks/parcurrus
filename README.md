@@ -60,9 +60,6 @@ This project is licensed under the [MIT](LICENSE) License.
 
 ## Acknowledgements
 
-- Thanks to [Your Name](https://github.com/your-username) for the initial project setup.
+
 - Inspired by the need for efficient parking solutions in busy cities.
 
-## Contact
-
-For any questions or feedback, feel free to reach out to us at [email@example.com](mailto:email@example.com).
