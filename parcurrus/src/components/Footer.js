@@ -1,49 +1,55 @@
-import React from 'react'
-import './style.css'
+import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='bg-gray-900 h-[200px] text-white footer'>
-    <div className='top_most'>
-    <div className="flex mx-[300px] ">
-        <div className='left px-20'>
-       <h1 className='font-bold text-3xl'>Help</h1>
-       <div >
-        <h2>Videos</h2>
-       </div>
+    <footer className="bg-gray-800">
+      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div className="md:flex md:items-center md:justify-between">
+          <div className="flex justify-center md:order-2">
+            <a href="/" className="text-gray-400 hover:text-white ml-4">
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                />
+              </svg>
+            </a>
+            <a href="/" className="text-gray-400 hover:text-white ml-4">
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l2.117-2.117A2 2 0 0017 4H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V8zM7 2v4m10 10H7M7 12h3m1 0h3m1 0h3"
+                />
+              </svg>
+            </a>
+            <a href="/" className="text-gray-400 hover:text-white ml-4">
+              <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 2l4 4-4 4"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 10v4h4M13 22l-4-4 4-4"
+                />
+              </svg>
+            </a>
+          </div>
+          <div className="mt-8 md:mt-0 md:order-1">
+            <p className="text-center text-gray-400">&copy; 2023 My Website. All rights reserved.</p>
+          </div>
         </div>
-        <div className='center px-20'>
-        <h1 className='font-bold text-3xl'>Community</h1>
-        <div>
-        <h2>Blogs</h2>
-       </div>
+      </div>
+    </footer>
+  );
+};
 
-        </div>
-        <div className='right px-20'>
-       <h1 className='font-bold text-3xl'>Developers</h1>
-       <div>
-        <h2> API</h2>
-        <h2>Forum</h2>
-       </div>
-
-        </div>
-    </div>
-  <hr className='my-7'/>
-    </div>
-    <div className="bottom_most flex mx-[300px]">
-<div className='px-20'>
-<h1>Terms Of Service</h1>
-</div>
-<div className='px-20'>
-<h1>Privacy</h1>
-</div>
-<div className='px-20'>
-<h1>Content Policy</h1>
-</div>
-</div>
-    <h1 className='text-white mx-[450px] my-[10px] bg-gray-900'>© Copyright 2023 parcurrus. All rights reserved</h1>
- </div>
-  )
-}
-
-export default Footer
+export default Footer;

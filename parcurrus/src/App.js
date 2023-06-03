@@ -16,7 +16,7 @@ export default function App() {
     setLoading(true) 
     setTimeout(()=>{
       setLoading(false)
-    },2000)
+    },100)
   },[])
   return (
  <div className="App">
@@ -35,7 +35,7 @@ export default function App() {
 <div>
  <Navbar />
   <Home />
-  <Embedd />
+  {/* <Embedd /> */}
 
  
  <Footer />
