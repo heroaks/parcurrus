@@ -5,7 +5,6 @@ This app will help you solve a significant issue in busy cities. Finding a spot 
 ## Features
 
 - Find nearby parking spots based on GPS
-- Earn crypto by posting your spare parking space
 - User-friendly interface
 - Real-time updates on available parking spots
 - Secure payment system
