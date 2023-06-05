@@ -1,6 +1,7 @@
 import React,{useState ,useEffect} from "react"
 import Home from "./components/Home";
 import About from "./components/About";
+import Services from "./components/Services";
 import "./App.css"
 import Footer from "./components/Footer"
 import GridLoader from "react-spinners/GridLoader";
@@ -36,6 +37,7 @@ export default function App() {
  <Navbar />
   <Home />
   <About />
+  <Services />
    <Footer />
   
 </div>
