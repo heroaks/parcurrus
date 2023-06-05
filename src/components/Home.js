@@ -1,7 +1,8 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import Embedd from './Embedd';  //the map component
 const Home = () => {
   const [showMap, setShowMap] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
 
   // Function to handle the onClick event, this function will simply updat the state of showMap to true
   const handleGetStarted = () => {
@@ -10,8 +11,22 @@ const Home = () => {
   const handleHide = () => {
     setShowMap(false);
   };
+  
+  const images = [
+    'C:/Users/thaku/Desktop/VS CODE/parcurrus/src/Assets/lorem-ipsum3.png',
+    'C:/Users/thaku/Desktop/VS CODE/parcurrus/src/Assets/lorem-ipsum3.png',
+    'C:/Users/thaku/Desktop/VS CODE/parcurrus/src/Assets/lorem-ipsum3.png',
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage === images.length - 1 ? 0 : prevImage + 1));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 ">
       <main className="container mx-auto px-4 py-12">
         <section className="text-center">
           <h1 className="text-4xl font-bold text-white mb-8">Welcome to Parking Finder</h1>
@@ -37,6 +52,13 @@ const Home = () => {
             </div>
             
           )}
+        </section>
+        <section className="relative">
+          <img
+            src={images[currentImage]}
+            alt="Slideshow"
+            className="w-full h-auto rounded-lg shadow-lg text-white"
+          />
         </section>
       </main>
     </div>
