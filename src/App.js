@@ -1,11 +1,11 @@
 import React,{useState ,useEffect} from "react"
-import Home from "./components/Home"
+import Home from "./components/Home";
+import About from "./components/About";
 import "./App.css"
 import Footer from "./components/Footer"
 import GridLoader from "react-spinners/GridLoader";
 import Navbar from "./components/Navbar";
-import Call from "./components/Call";
-import Embedd from "./components/Embedd";
+
 import "./components/style.css"
 
 
@@ -35,7 +35,8 @@ export default function App() {
 <div>
  <Navbar />
   <Home />
- <Footer />
+  {/* <About /> */}
+   <Footer />
   
 </div>
 }
