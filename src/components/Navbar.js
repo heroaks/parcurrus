@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import MapComponent from './Embedd';
-
+import Embedd from './Embedd';
+import CompanyLogo from '../Assets/logo.png';
 
 
 const Navbar = () => {
@@ -12,9 +12,11 @@ const Navbar = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <a href="/" className="text-white font-bold text-xl">
-              My Website
+          <div className="flex flex-shrink-0">
+          
+            <a href="/" className="text-white flex font-bold text-xl">
+            <img src={CompanyLogo} alt="the logo" className='h-[50px] w-[50px]'/>
+              <h1 className='mt-3'>PARCURRUS</h1>
             </a>
           </div>
           <div className="hidden md:block">

@@ -35,9 +35,6 @@ export default function App() {
 <div>
  <Navbar />
   <Home />
-  {/* <Embedd /> */}
-
- 
  <Footer />
   
 </div>

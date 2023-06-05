@@ -1,8 +1,36 @@
 import React from 'react';
 
+// anchor has to be added to the footer in place of h3
 const Footer = () => {
   return (
     <footer className="bg-gray-800">
+    <br />
+        <div className="text-gray-400 ">
+          <h3>USEFUL LINKS</h3>
+     <div className="hover:cursor-pointer text-gray-400 flex  my-6 place-content-center space-x-[50px]">
+        <div>
+
+         
+          <h3>About US</h3>
+          <h3>Help And Support</h3>
+          <h3>FAQs</h3>
+          <h3>Buying Guide</h3>
+          <h3>Return Policy</h3>
+          <h3>B2B Orders</h3>
+          <h3>Spot Locator</h3>
+        </div>
+        <div className=" text-gray-400">
+
+         <h3>E-Waste</h3>     
+          <h3>Franchise Opportunity</h3>
+          <h3>Site Map</h3>
+            <h3>Careers</h3>
+            <h3>Terms Of Use</h3>
+          <h3>Disclaimer</h3>
+         <h3>Privacy Policy</h3>
+        </div>
+      </div>
+          </div>
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex justify-center md:order-2">
@@ -43,8 +71,9 @@ const Footer = () => {
               </svg>
             </a>
           </div>
+      
           <div className="mt-8 md:mt-0 md:order-1">
-            <p className="text-center text-gray-400">&copy; 2023 My Website. All rights reserved.</p>
+            <p className="text-center text-gray-400">&copy; 2023 PARCURRUS. All rights reserved.</p>
           </div>
         </div>
       </div>
