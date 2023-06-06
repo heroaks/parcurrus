@@ -1,9 +1,9 @@
 import React from 'react'
-import ComingSoon from '../Assets/coming-soon.png'
+import ComingSoon from '../Assets/coming-soon.jpg'
 function Services() {
   return (
     <div>
-        <img src={ComingSoon} alt="Coming Soon" className="w-full h-auto rounded-lg shadow-lg text-white" />
+        <img src={ComingSoon} alt="Coming Soon" className=" flex w-[1275px] min-h-screen justify-center align-middle rounded-lg shadow-lg text-white" />
     </div>
   )
 }
