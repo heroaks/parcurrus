@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Embedd from './Embedd';
-import CompanyLogo from '../Assets/logo.png';
+import CompanyLogo from '../assets/logo.png';
 
 
 const Navbar = () => {
@@ -14,17 +14,17 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex flex-shrink-0">
           
-            <a href="/" className="text-white flex font-bold text-xl">
+            <a href="./Home" className="text-white flex font-bold text-xl">
             <img src={CompanyLogo} alt="the logo" className='h-[50px] w-[50px]'/>
               <h1 className='mt-3'>PARCURRUS</h1>
             </a>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
-              <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-              <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
-              <a href="/" className="text-gray-300 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+              <a href="./Home" className="text-gray-300 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+              <a href="./About" className="text-gray-300 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+              <a href="./Services" className="text-gray-300 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+              <a href="./Contact" className="text-gray-300 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
             </div>
           </div>
         </div>

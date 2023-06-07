@@ -1,5 +1,5 @@
 import React from 'react'
-import ComingSoon from '../Assets/coming-soon.jpg'
+import ComingSoon from '../assets/coming-soon.jpg'
 function Services() {
   return (
     <div>
