@@ -41,11 +41,12 @@ export default function App() {
  <Router>
   <Navbar />
     <Routes>
+      <Route exact path="/" element={<Home/>}/>
       <Route exact path="/home" element={<Home/>}/>
       <Route exact path="/about" element={<About/>}/>
       <Route exact path="/services" element={<Services/>}/>
       <Route exact path="/contact" element={<Contact/>}/>
-      <Route  Component={NotFound}/>
+      <Route exact path="*" Component={NotFound}/>
      </Routes>
      <Footer />
   </Router>

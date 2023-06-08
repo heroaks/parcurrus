@@ -6,7 +6,7 @@ const AboutUs = () => {
   
 
   return (
-    <div className="bg-gray-100 ">
+    <div className="bg-gray-100 w-[1200px]">
      <main className="container mx-auto px-4 py-12">
         <section className="relative mb-12">
           

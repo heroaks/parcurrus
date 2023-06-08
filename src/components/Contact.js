@@ -5,7 +5,7 @@ import Manohar from './ManoharComponent';
 import Contact2 from './Contact2';
 function Contact() {
   return (
-  <div> 
+  <div className='w-[1200px]'> 
 <div className='flex bg-gray-700 text-white'>
    <div  className='mx-3  '><Aysh/></div>
    <div className='mx-3 '><Deepesh/></div>
