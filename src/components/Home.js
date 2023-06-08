@@ -1,8 +1,9 @@
 import React,{useState, useEffect} from 'react';
 import Embedd from './Embedd';  //the map component
+import SlideShow from './HomeSlideShow'; //the slideshow component
 const Home = () => {
   const [showMap, setShowMap] = useState(false);
-  const [currentImage, setCurrentImage] = useState(0);
+ 
 
   // Function to handle the onClick event, this function will simply updat the state of showMap to true
   const handleGetStarted = () => {
@@ -12,19 +13,7 @@ const Home = () => {
     setShowMap(false);
   };
   
-  const images = [
-    'C:/Users/thaku/Desktop/VS CODE/parcurrus/src/Assets/lorem-ipsum3.png',
-    'C:/Users/thaku/Desktop/VS CODE/parcurrus/src/Assets/lorem-ipsum3.png',
-    'C:/Users/thaku/Desktop/VS CODE/parcurrus/src/Assets/lorem-ipsum3.png',
-  ];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prevImage) => (prevImage === images.length - 1 ? 0 : prevImage + 1));
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
+ 
   return (
     <div className="bg-gray-100 ">
       <main className="container mx-auto px-4 py-12">
@@ -54,11 +43,10 @@ const Home = () => {
           )}
         </section>
         <section className="relative">
-          <img
-            src={images[currentImage]}
-            alt="Slideshow"
-            className="w-full h-auto rounded-lg shadow-lg text-white"
-          />
+        <div className='m-10'>
+        <SlideShow/>
+        </div>
+        
         </section>
       </main>
     </div>

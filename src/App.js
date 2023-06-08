@@ -6,6 +6,10 @@ import "./App.css"
 import Footer from "./components/Footer"
 import GridLoader from "react-spinners/GridLoader";
 import Navbar from "./components/Navbar";
+import NotFound from "./components/NotFound";
+import Contact from "./components/Contact";
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import "./components/style.css"
 
@@ -32,18 +36,23 @@ export default function App() {
     data-testid="loader"
   />
   </div>    
-    :
+  :
 <div>
- <Navbar />
-  <Home />
-  <About />
-  <Services />
-   <Footer />
+ <Router>
+  <Navbar />
+    <Routes>
+      <Route exact path="/home" element={<Home/>}/>
+      <Route exact path="/about" element={<About/>}/>
+      <Route exact path="/services" element={<Services/>}/>
+      <Route exact path="/contact" element={<Contact/>}/>
+      <Route  Component={NotFound}/>
+     </Routes>
+     <Footer />
+  </Router>
+   
   
 </div>
 }
-
-  
- </div>
+</div>
   )
 }

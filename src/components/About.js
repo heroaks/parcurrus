@@ -1,36 +1,22 @@
 import React from 'react';
+import AboutSlideShow from './AboutSlideShow';
+import image1 from '../assets/lorem-ipsum1.png';
 
 const AboutUs = () => {
-  const images = [
-    '../Assets/lorem-ipsum2.jpg',
-    '../Assets/lorem-ipsum2.jpg',
-    '../Assets/lorem-ipsum2.jpg',
-  ];
+  
 
   return (
     <div className="bg-gray-100 ">
      <main className="container mx-auto px-4 py-12">
         <section className="relative mb-12">
-          <div className="h-96">
-            <div
-              className="h-full w-full bg-cover bg-center absolute top-0 left-0"
-              style={{ backgroundImage: `url(${images[0]})` }}
-            ></div>
-            <div
-              className="h-full w-full bg-cover bg-center absolute top-0 left-0"
-              style={{ backgroundImage: `url(${images[1]})`, animationDelay: '4s' }}
-            ></div>
-            <div
-              className="h-full w-full bg-cover bg-center absolute top-0 left-0"
-              style={{ backgroundImage: `url(${images[2]})`, animationDelay: '8s' }}
-            ></div>
-          </div>
+          
+           <AboutSlideShow />
         </section>
 
         <section className="container mx-auto px-4 text-white">
           <div className="flex flex-wrap items-center mb-12">
             <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
-              <img src="/images/about-img1.jpg" alt="About" className="rounded-lg shadow-lg" />
+              <img src={image1} alt="About" className="rounded-lg shadow-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
@@ -55,12 +41,12 @@ const AboutUs = () => {
               </ul>
             </div>
             <div className="w-full md:w-1/2 order-1 md:order-2">
-              <img src="/images/about-img2.jpg" alt="About" className="rounded-lg shadow-lg" />
+              <img src={image1} alt="About" className="rounded-lg shadow-lg" />
             </div>
           </div>
           <div className="flex flex-wrap items-center mb-12">
             <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
-              <img src="/images/about-img1.jpg" alt="About" className="rounded-lg shadow-lg" />
+              <img src={image1} alt="About" className="rounded-lg shadow-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
@@ -85,12 +71,12 @@ const AboutUs = () => {
               </ul>
             </div>
             <div className="w-full md:w-1/2 order-1 md:order-2">
-              <img src="/images/about-img2.jpg" alt="About" className="rounded-lg shadow-lg" />
+              <img src={image1} alt="About" className="rounded-lg shadow-lg" />
             </div>
           </div>
           <div className="flex flex-wrap items-center mb-12">
             <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
-              <img src="/images/about-img1.jpg" alt="About" className="rounded-lg shadow-lg" />
+              <img src={image1} alt="About" className="rounded-lg shadow-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
@@ -115,7 +101,7 @@ const AboutUs = () => {
               </ul>
             </div>
             <div className="w-full md:w-1/2 order-1 md:order-2">
-              <img src="/images/about-img2.jpg" alt="About" className="rounded-lg shadow-lg" />
+              <img src={image1} alt="About" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </section>

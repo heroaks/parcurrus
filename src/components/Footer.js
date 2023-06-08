@@ -3,8 +3,8 @@ import React from 'react';
 // anchor has to be added to the footer in place of h3
 const Footer = () => {
   return (
-    <footer className="bg-gray-800">
-    <br />
+    <footer className="p-0 m-0 bg-gray-800 h-[50px]">
+    
         <div className="text-gray-400 ">
           <h3>USEFUL LINKS</h3>
      <div className="hover:cursor-pointer text-gray-400 flex  my-6 place-content-center space-x-[50px]">
