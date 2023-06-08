@@ -15,13 +15,20 @@ const Home = () => {
   
  
   return (
-    <div className="bg-gray-100 ">
+    <div className="bg-gray-100 w-[1200px]">
       <main className="container mx-auto px-4 py-12">
+        
         <section className="text-center">
           <h1 className="text-4xl font-bold text-white mb-8">Welcome to Parking Finder</h1>
           <p className="text-lg text-white mb-8">
             Finding parking made easy. Discover available parking spots near you with our intuitive app.
           </p>
+           <section className="relative">
+        <div className='m-10'>
+        <SlideShow/>
+        </div>
+        
+        </section>
           {!showMap ? (
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -42,12 +49,7 @@ const Home = () => {
             
           )}
         </section>
-        <section className="relative">
-        <div className='m-10'>
-        <SlideShow/>
-        </div>
-        
-        </section>
+       
       </main>
     </div>
   );

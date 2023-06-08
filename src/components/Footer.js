@@ -11,23 +11,23 @@ const Footer = () => {
         <div>
 
          
-          <h3>About US</h3>
-          <h3>Help And Support</h3>
-          <h3>FAQs</h3>
-          <h3>Buying Guide</h3>
-          <h3>Return Policy</h3>
-          <h3>B2B Orders</h3>
-          <h3>Spot Locator</h3>
+          <a href="google.com" className='hover:text-white'><h3>About US</h3></a>
+          <a href="google.com" className='hover:text-white'><h3>Help And Support</h3></a>
+          <a href="google.com" className='hover:text-white'><h3>FAQs</h3></a>
+          <a href="google.com" className='hover:text-white'><h3>Buying Guide</h3></a>
+          <a href="google.com" className='hover:text-white'><h3>Return Policy</h3></a>
+          <a href="google.com" className='hover:text-white'><h3>B2B Orders</h3></a>
+          <a href="google.com" className='hover:text-white'><h3>Spot Locator</h3></a>
         </div>
         <div className=" text-gray-400">
 
-         <h3>E-Waste</h3>     
-          <h3>Franchise Opportunity</h3>
-          <h3>Site Map</h3>
-            <h3>Careers</h3>
-            <h3>Terms Of Use</h3>
-          <h3>Disclaimer</h3>
-         <h3>Privacy Policy</h3>
+         <a href="google.com" className='hover:text-white'><h3>E-Waste</h3></a>     
+          <a href="google.com" className='hover:text-white'><h3>Franchise Opportunity</h3></a>
+          <a href="google.com" className='hover:text-white'><h3>Site Map</h3></a>
+            <a href="google.com" className='hover:text-white'><h3>Careers</h3></a>
+            <a href="google.com" className='hover:text-white'><h3>Terms Of Use</h3></a>
+          <a href="google.com" className='hover:text-white'><h3>Disclaimer</h3></a>
+         <a href="google.com" className='hover:text-white'><h3>Privacy Policy</h3></a>
         </div>
       </div>
           </div>
