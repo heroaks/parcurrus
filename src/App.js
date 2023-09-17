@@ -8,34 +8,25 @@ import GridLoader from "react-spinners/GridLoader";
 import Navbar from "./components/Navbar";
 import NotFound from "./components/NotFound";
 import Contact from "./components/Contact";
-
+import Preloader from "./components/Preloader";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import "./components/style.css"
 
 
 export default function App() {
-  const [loading, setLoading]= useState(false);
+  const [loading, setLoading]= useState(true);
   const [color, setColor] = useState("#ffffff");
-  useEffect(()=>{
-    setLoading(true) 
-    setTimeout(()=>{
-      setLoading(false)
-    },100)
-  },[])
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2100);
+  }, []);
   return (
  <div className="App">
   {
     loading ?
-    <div className="fixed m-0 p-0 left-[48%] top-[45%] ">
-      <GridLoader className=""
-    color={color}
-    loading={loading}
-    size={25}
-    aria-label="Loading Spinner"
-    data-testid="loader"
-  />
-  </div>    
+    <Preloader/>    
   :
 <div>
  <Router>

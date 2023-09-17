@@ -16,7 +16,7 @@ const AboutUs = () => {
         <section className="container mx-auto px-4 text-white">
           <div className="flex flex-wrap items-center mb-12">
             <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
-              <img src={image1} alt="About" className="rounded-lg shadow-lg" />
+              <img src="src\Assets\lorem-ipsum1.png" alt="About" className="rounded-lg shadow-lg" />
             </div>
             <div className="w-full md:w-1/2">
               <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
